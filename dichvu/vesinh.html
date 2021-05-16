@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Chó Mèo</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="contact">
+            <ul>
+                <li><img src="../Facebook icon.webp" alt=""></li>
+                <li><img src="../Instagram.webp" alt=""></li>
+                <li><img src="../YouTube icon.webp" alt=""></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><img width="60" src="../img/pawprint.png" alt=""></li>
+                <li>
+                    <ul class="taskbar">
+                        <li><a href="../index.html">Trang Chủ</a></li>
+                        <li id="link" class="dichvu">Dịch Vụ <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="cattia.html">Cắt Tỉa Lông</a></li>
+                                <li><a href="vesinh.html">Vệ Sinh, Tắm, Gội</a></li>
+                            </ul>
+                        </li>
+                        <li id="link" class="dichvu">Shop Chó <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="../shopcho/dodung.html">Đồ Dùng</a></li>
+                                <li><a href="../shopcho/thucan.html">Thức Ăn</a></li>
+                                <li><a href="../shopcho/trangphuc.html">Trang Phục</a></li>
+                            </ul>
+                        </li>
+                        <li id="link" class="dichvu">Shop Mèo <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="../shopcho/dodung.html">Đồ Dùng</a></li>
+                                <li><a href="../shopcho/thucan.html">Thức Ăn</a></li>
+                                <li><a href="../shopcho/trangphuc.html">Trang Phục</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../login/login.html">Login </a></li>
+                        <li id="user"><img id="user" width="30" src="img/profile-user.png" alt=""></li>
+                    </ul>
+                </li>
+                <li id="search">
+                    <input type="text" name="" placeholder="Nhập..." id="">
+                    <button>Tìm Kiếm</button>
+                </li>
+                <ul class="shop">
+                    <img width="35" src="../img/shopping-cart.png" alt=""></ul>
+            </ul>
+        </div>
+        <div class="review"></div>
+        <div class="showroom">
+            <div class="noibat">
+                <h1>DỊCH VỤ NỔI BẬT</h1>
+            </div>
+            <!-- <div class="search">
+                <div>
+                    <input type="text" name="" placeholder="Nhập..." id="">
+                    <button>Tìm Kiếm</button>
+                </div>
+            </div> -->
+            <div class="dogandcat">
+                <ul>
+                    <li>
+                        <div class="dog">
+                            <img src="https://sites.google.com/site/chamsoccunyeu/_/rsrc/1472855757415/newsletter/bang-gia-dich-vu/tam%20cho.jpg?height=137&width=200" alt="">
+                            <p id="name">Dịch vụ tắm, trừ ve, sấy và chải lông 1</p>
+                            <div class="info">
+                                <p>Đối với lông dài:</p>
+                                <p>Từ 3 - 6 kg: 80K</p>
+                                <p>Từ 6 - 10 kg: 120K</p>
+                                <p>Trên 10 kg: 150K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="https://sites.google.com/site/chamsoccunyeu/_/rsrc/1472855756894/newsletter/bang-gia-dich-vu/bo%20chet.jpeg?height=149&width=200" alt="">
+                            <p id="name">Dịch vụ tắm, trừ ve, sấy và chải lông 2</p>
+                            <div class="info">
+                                <p>Đối với lông sát:</p>
+                                <p>Từ 3 - 6 kg: 60K</p>
+                                <p>Từ 6 - 10 kg: 100K</p>
+                                <p>Trên 10 kg: 120K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                            <p id="name">Dịch vụ trừ ve, bọ chét</p>
+                            <div class="info">
+                                <p>Ngừa ve với thuốc nhỏ có tác dụng trong vòng 6 tháng: 180K/lần</p>
+                                <p>Diệt ve, bọ chét trong trường hợp nhiều và nặng: 200K - 300K/lần</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQ0GZ91Lsd1rcBMIJTna_3tTiqvI1coUtwg&usqp=CAU" alt="">
+                            <p id="name">Chăm sóc chó mèo bị bệnh</p>
+                            <div class="info">
+                                <p>Trong trường hợp chó/ mèo bị bệnh mà bạn không có thời gian đem đi điều trị, chúng tôi sẽ thay bạn chăm sóc chúng. 200K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="nextpage">
+                <ul>
+                    <li style="background-color: black; color: white;">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <h1>Bản quyền thuộc về Top 1 Thế Giới</h1>
+        </div>
+    </div>
+</body>
+
+</html>

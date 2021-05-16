@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Chó Mèo</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="contact">
+            <ul>
+                <li><img src="../Facebook icon.webp" alt=""></li>
+                <li><img src="../Instagram.webp" alt=""></li>
+                <li><img src="../YouTube icon.webp" alt=""></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><img width="60" src="../img/pawprint.png" alt=""></li>
+                <li>
+                    <ul class="taskbar">
+                        <li><a href="../index.html">Trang Chủ</a></li>
+                        <li id="link" class="dichvu">Dịch Vụ <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="cattia.html">Cắt Tỉa Lông</a></li>
+                                <li><a href="vesinh.html">Vệ Sinh, Tắm, Gội</a></li>
+                            </ul>
+                        </li>
+                        <li id="link" class="dichvu">Shop Chó <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="../shopcho/dodung.html">Đồ Dùng</a></li>
+                                <li><a href="../shopcho/thucan.html">Thức Ăn</a></li>
+                                <li><a href="../shopcho/trangphuc.html">Trang Phục</a></li>
+                            </ul>
+                        </li>
+                        <li id="link" class="dichvu">Shop Mèo <img width="12" src="../img/caret-down.png" alt="">
+                            <ul>
+                                <li><a href="../shopcho/dodung.html">Đồ Dùng</a></li>
+                                <li><a href="../shopcho/thucan.html">Thức Ăn</a></li>
+                                <li><a href="../shopcho/trangphuc.html">Trang Phục</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../login/login.html">Login </a></li>
+                        <li id="user"><img id="user" width="30" src="img/profile-user.png" alt=""></li>
+                    </ul>
+                </li>
+                <li id="search">
+                    <input type="text" name="" placeholder="Nhập..." id="">
+                    <button>Tìm Kiếm</button>
+                </li>
+                <ul class="shop">
+                    <img width="35" src="../img/shopping-cart.png" alt=""></ul>
+            </ul>
+        </div>
+        <div class="review"></div>
+        <div class="showroom">
+            <div class="noibat">
+                <h1>DỊCH VỤ NỔI BẬT</h1>
+            </div>
+            <!-- <div class="search">
+                <div>
+                    <input type="text" name="" placeholder="Nhập..." id="">
+                    <button>Tìm Kiếm</button>
+                </div>
+            </div> -->
+            <div class="dogandcat">
+                <ul>
+                    <li>
+                        <div class="dog">
+                            <img src="https://sites.google.com/site/chamsoccunyeu/_/rsrc/1472855756373/newsletter/bang-gia-dich-vu/son%20mong.jpeg?height=122&width=200" alt="">
+                            <p id="name">Dịch vụ chăm sóc móng, làm sạch tai</p>
+                            <div class="info">
+                                <p>Cắt móng, chăm sóc móng: 40K</p>
+                                <p>Sơn màu móng, sơn bóng bảo vệ: 50 K</p>
+                                <p>Làm sạch tai: 20 K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="https://sites.google.com/site/chamsoccunyeu/_/rsrc/1472855754612/newsletter/bang-gia-dich-vu/xen%20long.JPG?height=156&width=200" alt="">
+                            <p id="name">Dịch vụ xén,<br> tỉa lông</p>
+                            <div class="info">
+                                <p>Tỉa lông tai và đầu: 50K</p>
+                                <p>Xén lông toàn thân 3-6Kg :150K</p>
+                                <p>Xén lông toàn thân 6Kg trở lên :180K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                            <p id="name">Dịch vụ chăm sóc (VIP)</p>
+                            <div class="info">
+                                <p>Cắt móng, chăm sóc móng: 100K</p>
+                                <p>Sơn màu móng, sơn bóng bảo vệ: 150 K</p>
+                                <p>Làm sạch tai: 50 K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dog">
+                            <img src="https://image2.baonghean.vn/w607/Uploaded/2020/xqymkxrlxk/2018_02_13/14157723_1322018.jpg" alt="">
+                            <p id="name">Dịch vụ xén,<br> tỉa lông(VIP)</p>
+                            <div class="info">
+                                <p>Tỉa lông tai và đầu: 100K</p>
+                                <p>Xén lông toàn thân 3-6Kg :250K</p>
+                                <p>Xén lông toàn thân 6Kg trở lên :200K</p>
+                            </div>
+                            <hr>
+                            <div class="thanhtoan">
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nextpage">
+                <ul>
+                    <li style="background-color: black; color: white;">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <h1>Bản quyền thuộc về Top 1 Thế Giới</h1>
+        </div>
+    </div>
+</body>
+
+</html>
